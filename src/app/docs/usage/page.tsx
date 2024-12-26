@@ -3,7 +3,7 @@ export default function UsageGuide() {
     <div className="max-w-3xl">
       <h1 className="text-3xl font-bold mb-8">Usage Guide</h1>
 
-      <section className="prose prose-invert opacity-80">
+      <section className="prose dark:prose-invert opacity-80">
         <h2 className="text-2xl font-semibold mt-8 mb-4">Getting Started</h2>
         <p className="mb-6">
           After installing the extension, Form Accessibility Validator
@@ -44,7 +44,7 @@ export default function UsageGuide() {
         <h2 className="text-2xl font-semibold mt-12 mb-4">
           Keyboard Shortcuts
         </h2>
-        <div className="bg-zinc-800 p-4 rounded">
+        <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded">
           <ul className="space-y-2">
             <li>
               <kbd>Alt</kbd> + <kbd>A</kbd> - Toggle extension
@@ -80,9 +80,11 @@ export default function UsageGuide() {
           </div>
         </div>
 
-        <div className="bg-amber-900/30 border border-amber-700/30 p-4 rounded mt-8">
-          <h3 className="text-amber-400 font-semibold">Tips & Tricks</h3>
-          <ul className="mt-2 space-y-2">
+        <div className="bg-amber-100/30 dark:bg-amber-900/30 border border-amber-200/30 dark:border-amber-700/30 p-4 rounded mt-8">
+          <h3 className="text-amber-800 dark:text-amber-400 font-semibold">
+            Tips & Tricks
+          </h3>
+          <ul className="mt-2 space-y-2 text-amber-900 dark:text-amber-100">
             <li>Pin the extension for quick access</li>
             <li>Use keyboard shortcuts for faster workflow</li>
             <li>Enable automatic scanning in the options</li>

@@ -1,5 +1,14 @@
 import Link from "next/link";
-import Image from "next/image";
+import { GitHubIcon } from "./GitHubIcon";
+
+type NavigationItem = {
+  name: string;
+  href: string;
+};
+
+type SocialItem = NavigationItem & {
+  icon: React.ComponentType<{ className?: string }>;
+};
 
 const navigation = {
   main: [
@@ -7,23 +16,14 @@ const navigation = {
     { name: "Install", href: "/docs/installation" },
     { name: "Terms", href: "/terms" },
     { name: "Privacy", href: "/privacy" },
-  ],
+  ] as NavigationItem[],
   social: [
     {
       name: "GitHub",
       href: "https://github.com/dmostoller/form-accessibility-validator",
-      icon: (props: any) => (
-        <Image
-          src="/github-mark-white.png"
-          alt=""
-          width={36}
-          height={36}
-          className="opacity-80 hover:opacity-100 transition-opacity"
-          aria-hidden="true"
-        />
-      ),
+      icon: GitHubIcon,
     },
-  ],
+  ] as SocialItem[],
 };
 
 export function Footer() {

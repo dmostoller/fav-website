@@ -33,8 +33,8 @@ export default function FeaturesGuide() {
     <div className="max-w-3xl">
       <h1 className="text-3xl font-bold mb-8">Features</h1>
 
-      <section className="prose prose-invert opacity-80">
-        <p className="text-lg mb-8">
+      <section className="prose dark:prose-invert opacity-80">
+        <p className="text-lg mb-8 text-zinc-800 dark:text-zinc-200">
           Form Accessibility Validator comes packed with powerful features to
           help you create and maintain accessible web forms.
         </p>
@@ -43,13 +43,19 @@ export default function FeaturesGuide() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="border border-[var(--border)] rounded-lg p-6"
+              className="border border-zinc-200 dark:border-zinc-700 bg-white/50 dark:bg-zinc-800/50 rounded-lg p-6"
             >
-              <h2 className="text-2xl font-semibold mb-4">{feature.title}</h2>
-              <p className="mb-4">{feature.description}</p>
+              <h2 className="text-2xl font-semibold mb-4 text-zinc-900 dark:text-zinc-100">
+                {feature.title}
+              </h2>
+              <p className="mb-4 text-zinc-700 dark:text-zinc-300">
+                {feature.description}
+              </p>
 
-              <h3 className="text-lg font-semibold mb-2">Key Capabilities:</h3>
-              <ul className="list-disc pl-6 space-y-2">
+              <h3 className="text-lg font-semibold mb-2 text-zinc-800 dark:text-zinc-200">
+                Key Capabilities:
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 text-zinc-700 dark:text-zinc-300">
                 {feature.details.map((detail) => (
                   <li key={detail}>{detail}</li>
                 ))}
@@ -58,13 +64,15 @@ export default function FeaturesGuide() {
           ))}
         </div>
 
-        <div className="bg-zinc-800 p-6 rounded-lg mt-12">
-          <h2 className="text-xl font-semibold mb-4">Configuration Options</h2>
-          <p className="mb-4">
+        <div className="bg-zinc-100 dark:bg-zinc-800 p-6 rounded-lg mt-12 border border-zinc-200 dark:border-zinc-700">
+          <h2 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-zinc-100">
+            Configuration Options
+          </h2>
+          <p className="mb-4 text-zinc-700 dark:text-zinc-300">
             Access these features through the extension popup or configuration
             panel:
           </p>
-          <ul className="list-disc pl-6 space-y-2">
+          <ul className="list-disc pl-6 space-y-2 text-zinc-700 dark:text-zinc-300">
             <li>Customize scanning rules</li>
             <li>Set notification preferences</li>
             <li>Adjust highlighting colors</li>
