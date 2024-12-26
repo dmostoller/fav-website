@@ -24,7 +24,9 @@ export function Hero() {
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
-                href="#"
+                href="https://github.com/dmostoller/form-accessibility-validator"
+                target="_blank"
+                rel="noreferrer"
                 className="w-full flex items-center justify-center px-8 py-3 border border-[var(--border)] text-base font-medium rounded-md bg-[var(--background)] hover:bg-[var(--surface)] md:py-4 md:text-lg md:px-10"
               >
                 View on GitHub

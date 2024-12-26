@@ -11,7 +11,7 @@ const navigation = {
   social: [
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/dmostoller/form-accessibility-validator",
       icon: (props: any) => (
         <Image
           src="/github-mark-white.png"
@@ -47,6 +47,8 @@ export function Footer() {
             <a
               key={item.name}
               href={item.href}
+              target="_blank"
+              rel="noreferrer"
               className="text-[var(--primary)] hover:text-[var(--primary-hover)]"
             >
               <span className="sr-only">{item.name}</span>

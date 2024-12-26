@@ -64,7 +64,9 @@ export default function Privacy() {
           <li>
             Open an issue on our{" "}
             <a
-              href="#"
+              href="https://github.com/dmostoller/form-accessibility-validator"
+              target="_blank"
+              rel="noreferrer"
               className="text-[var(--primary)] hover:text-[var(--primary-hover)]"
             >
               GitHub repository
