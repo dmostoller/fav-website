@@ -34,7 +34,7 @@ export default function UsageGuide() {
             <p>Right-click the extension icon</p>
           </li>
           <li>
-            <p>Select "Options"</p>
+            <p>Select &quot;Options&quot;</p>
           </li>
           <li>
             <p>Customize scanning rules and notification preferences</p>
@@ -70,8 +70,8 @@ export default function UsageGuide() {
           <div>
             <h3 className="text-xl font-semibold mb-2">Generating Reports</h3>
             <p>
-              Use the "Generate Report" button for detailed WCAG compliance
-              information
+              Use the &quot;Generate Report&quot; button for detailed WCAG
+              compliance information
             </p>
           </div>
           <div>

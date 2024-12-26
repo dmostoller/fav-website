@@ -22,7 +22,20 @@ export default function FAQ() {
                 <h3 className="text-xl font-semibold mb-4">
                   Which WCAG version is supported?
                 </h3>
-                <p>We support WCAG 2.1 Level AA compliance checking.</p>
+                <p className="mb-2">
+                  Our tool currently validates the following WCAG 2.1 criteria:
+                </p>
+                <ul className="list-disc pl-6 mb-4">
+                  <li>Form Control Labels (WCAG 1.3.1 Level A)</li>
+                  <li>Color Contrast (WCAG 1.4.3 Level AA)</li>
+                  <li>Focus Indicators (WCAG 2.4.7 Level AA)</li>
+                </ul>
+                <p>
+                  While these checks help with accessibility compliance, they do
+                  not cover all WCAG 2.1 Level AA requirements. For complete
+                  WCAG 2.1 Level AA compliance, additional manual testing is
+                  recommended.
+                </p>
               </div>
 
               <div>
@@ -72,8 +85,8 @@ export default function FAQ() {
                   Can I export accessibility reports?
                 </h3>
                 <p>
-                  Yes, you can export reports in PDF or JSON formats for
-                  documentation and tracking.
+                  Yes, you can export reports in PDF, JSON or Markdown formats
+                  for documentation and tracking.
                 </p>
               </div>
 
@@ -92,7 +105,7 @@ export default function FAQ() {
                   Can I customize the scanning rules?
                 </h3>
                 <p>
-                  Yes, you can enable/disable specific rules and set custom
+                  Yes, you can enable/disable specific rules and filter by
                   severity levels.
                 </p>
               </div>
@@ -104,7 +117,7 @@ export default function FAQ() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  The extension isn't detecting my forms
+                  The extension isn&apos;t detecting my forms
                 </h3>
                 <p>
                   Try refreshing the page or checking if the form elements are

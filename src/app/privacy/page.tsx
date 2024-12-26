@@ -38,9 +38,9 @@ export default function Privacy() {
           Email Communications
         </h2>
         <p>
-          If you subscribe to our updates or documentation changes, we'll only
-          use your email for the specified purpose. You can unsubscribe at any
-          time.
+          If you subscribe to our updates or documentation changes, we&apos;ll
+          only use your email for the specified purpose. You can unsubscribe at
+          any time.
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-4">Data Sharing</h2>

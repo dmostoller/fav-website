@@ -11,11 +11,13 @@ export default function FeaturesGuide() {
     },
     {
       title: "WCAG Compliance Checking",
-      description: "Validates against latest WCAG guidelines",
+      description: "Validates specific WCAG 2.1 accessibility criteria",
       details: [
-        "WCAG 2.1 Level AA support",
-        "Customizable compliance levels",
-        "Detailed violation explanations",
+        "Form Control Labels (WCAG 1.3.1 Level A)",
+        "Color Contrast (WCAG 1.4.3 Level AA)",
+        "Focus Indicators (WCAG 2.4.7 Level AA)",
+        "Detailed violation reporting and guidance",
+        "Note: Additional manual testing recommended for full compliance",
       ],
     },
     {
@@ -39,7 +41,7 @@ export default function FeaturesGuide() {
           help you create and maintain accessible web forms.
         </p>
 
-        <div className="space-y-12">
+        <div className="space-y-2">
           {features.map((feature) => (
             <div
               key={feature.title}
@@ -64,7 +66,7 @@ export default function FeaturesGuide() {
           ))}
         </div>
 
-        <div className="bg-zinc-100 dark:bg-zinc-800 p-6 rounded-lg mt-12 border border-zinc-200 dark:border-zinc-700">
+        <div className="bg-zinc-100 dark:bg-zinc-800 p-6 rounded-lg mt-2 border border-zinc-200 dark:border-zinc-700">
           <h2 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-zinc-100">
             Configuration Options
           </h2>
@@ -74,9 +76,8 @@ export default function FeaturesGuide() {
           </p>
           <ul className="list-disc pl-6 space-y-2 text-zinc-700 dark:text-zinc-300">
             <li>Customize scanning rules</li>
-            <li>Set notification preferences</li>
-            <li>Adjust highlighting colors</li>
-            <li>Configure auto-fix behavior</li>
+            <li>Filter by severity levels</li>
+            <li>Toggle highlight overylay visibility</li>
           </ul>
         </div>
       </section>

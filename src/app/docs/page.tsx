@@ -29,6 +29,14 @@ export default function Docs() {
           </li>
           <li>
             <a
+              href="/docs/features"
+              className="text-[var(--primary)] hover:text-[var(--primary-hover)]"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
               href="/docs/faq"
               className="text-[var(--primary)] hover:text-[var(--primary-hover)]"
             >

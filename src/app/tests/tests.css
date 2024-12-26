@@ -1,0 +1,90 @@
+:root {
+  --low-contrast: #999999;
+  --medium-contrast: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --low-contrast: #666666;
+    --medium-contrast: #999999;
+  }
+}
+
+.bad-button {
+  border: none;
+  outline: none;
+}
+
+.bad-button:focus {
+  outline: none;
+}
+
+.weak-focus:focus {
+  outline: 1px dotted var(--border);
+}
+
+.good-focus:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.custom-focus:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--success),
+    0 0 0 6px var(--background);
+}
+/* Color Contrast Styles */
+.low-contrast {
+  color: #999;
+}
+
+.medium-contrast {
+  color: #666;
+}
+
+.good-contrast {
+  color: #000;
+}
+
+.low-contrast-button {
+  color: #fff;
+  background-color: #e3e3e3;
+}
+
+/* ARIA Styles */
+.custom-button {
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.custom-button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.alert {
+  border-radius: 4px;
+}
+
+.tab-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab-list [role="tab"] {
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.tab-list [role="tab"]:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.focusable-div:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

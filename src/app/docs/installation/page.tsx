@@ -18,11 +18,11 @@ export default function InstallationGuide() {
           </li>
 
           <li>
-            <p>Click "Add to Chrome"</p>
+            <p>Click &quot;Add to Chrome&quot;</p>
           </li>
 
           <li>
-            <p>Click "Add Extension" in the popup</p>
+            <p>Click &quot;Add Extension&quot; in the popup</p>
           </li>
         </ol>
 
@@ -52,8 +52,8 @@ export default function InstallationGuide() {
           </li>
           <li>
             <p>
-              Right-click the extension icon and select "Options" to customize
-              settings
+              Right-click the extension icon and select &quot;Options&quot; to
+              customize settings
             </p>
           </li>
         </ol>
@@ -70,7 +70,7 @@ export default function InstallationGuide() {
             <li>Clear browser cache and reload the page</li>
             <li>
               If issues persist, right-click the extension icon and select
-              "Remove from Chrome" then reinstall
+              &quot;Remove from Chrome&quot; then reinstall
             </li>
           </ul>
         </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function DocsLayout({
   children,
 }: {
@@ -7,7 +9,7 @@ export default function DocsLayout({
     <div className="flex min-h-screen">
       <aside className="w-64 border-r border-[var(--border)] p-6">
         <div className="mb-6 pb-4 border-b border-[var(--border)]">
-          <a
+          <Link
             href="/"
             className="flex items-center gap-2 text-lg font-semibold hover:text-[var(--primary)]"
           >
@@ -23,7 +25,7 @@ export default function DocsLayout({
               <polyline points="9 22 9 12 15 12 15 22" />
             </svg>
             <span>Home</span>
-          </a>
+          </Link>
         </div>
         <nav className="space-y-2">
           <a href="/docs" className="block hover:text-[var(--primary)]">

@@ -52,9 +52,11 @@ export default function Terms() {
 
         <h2 className="text-xl font-semibold mt-8 mb-4">5. Disclaimers</h2>
         <ul className="list-disc pl-5 space-y-2">
-          <li>The service is provided "as is" without warranties</li>
+          <li>The service is provided &quot;as is&quot; without warranties</li>
           <li>We do not guarantee complete accessibility compliance</li>
-          <li>Users remain responsible for their website's accessibility</li>
+          <li>
+            Users remain responsible for their website&apos;s accessibility
+          </li>
           <li>We are not liable for any damages arising from use</li>
         </ul>
 
