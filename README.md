@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Form Accessibility Validator
 
-## Getting Started
+A VS Code extension that helps validate and improve form accessibility in real-time.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Open VS Code
+2. Go to Extensions (⌘+Shift+X)
+3. Search for "Form Accessibility Validator"
+4. Click Install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🔄 Real-time Analysis
+- 👁 Color Vision Simulation
+- ✅ WCAG Compliance Checking
+- 📊 Accessibility Reports
+- 💡 Best Practices Suggestions
+- 🎯 Element Path Detection
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+1. Open a file containing form elements
+2. The extension automatically scans for accessibility issues
+3. View suggestions in the Problems panel
+4. Use Command Palette (⌘+Shift+P) and search for "Form Accessibility" for more options
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Screenshots will be added here]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Issue Tracker](https://github.com/username/form-accessibility-validator/issues)
+- Support Email: support@formaccessibility.dev
+- [FAQ](docs/FAQ.md)
+
+## Security
+
+Please report security issues to security@formaccessibility.dev
+
+## License
+
+MIT License - See [LICENSE](LICENSE) for details
