@@ -43,6 +43,13 @@ textarea:focus {
   outline-offset: var(--focus-ring-offset);
   border-color: var(--focus-ring);
 }
+.good-focus:focus {
+  outline: 2px solid #4f46e5;
+
+  outline-offset: 2px;
+
+  border-radius: 4px;
+}
 
 .no-focus:focus-visible {
   outline: none;

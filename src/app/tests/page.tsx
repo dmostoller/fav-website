@@ -22,14 +22,14 @@ export default function TestPage() {
                 <input
                   id="goodContrastInput"
                   type="text"
-                  className="px-4 py-2 border bg-[var(--background)] text-[var(--text)]"
+                  className="px-4 py-2 border bg-[var(--background)] text-[var(--text)] good-focus"
                   aria-label="Good contrast input"
                 />
 
                 <label htmlFor="goodContrastSelect">Good Contrast Select</label>
                 <select
                   id="goodContrastSelect"
-                  className="px-4 py-2 border bg-[var(--background)] text-[var(--text)]"
+                  className="px-4 py-2 border bg-[var(--background)] text-[var(--text)] good-focus"
                 >
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -39,7 +39,12 @@ export default function TestPage() {
                   <legend className="text-[var(--text)]">
                     Good Contrast Radio
                   </legend>
-                  <input type="radio" id="goodRadio1" name="goodRadio" />
+                  <input
+                    type="radio"
+                    id="goodRadio1"
+                    name="goodRadio"
+                    className="good-focus"
+                  />
                   <label htmlFor="goodRadio1" className="text-[var(--text)]">
                     Choice 1
                   </label>
@@ -57,7 +62,7 @@ export default function TestPage() {
                 <input
                   id="lowContrastInput"
                   type="text"
-                  className="px-4 py-2 border bg-[var(--background)] text-[var(--low-contrast)]"
+                  className="px-4 py-2 border bg-[var(--background)] text-[var(--low-contrast)] good-focus"
                   aria-label="Low contrast input"
                 />
 
@@ -69,7 +74,7 @@ export default function TestPage() {
                 </label>
                 <select
                   id="lowContrastSelect"
-                  className="px-4 py-2 border bg-[var(--background)] text-[var(--low-contrast)]"
+                  className="px-4 py-2 border bg-[var(--background)] text-[var(--low-contrast)] good-focus"
                 >
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -79,7 +84,12 @@ export default function TestPage() {
                   <legend className="text-[var(--low-contrast)]">
                     Low Contrast Radio
                   </legend>
-                  <input type="radio" id="lowRadio1" name="lowRadio" />
+                  <input
+                    type="radio"
+                    id="lowRadio1"
+                    name="lowRadio"
+                    className="good-focus"
+                  />
                   <label
                     htmlFor="lowRadio1"
                     className="text-[var(--low-contrast)]"
@@ -99,13 +109,13 @@ export default function TestPage() {
               <div>
                 <input
                   type="text"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                   aria-label="Text input with aria label"
                 />
 
                 <select
                   aria-label="Select with aria label"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                 >
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -113,7 +123,7 @@ export default function TestPage() {
 
                 <textarea
                   aria-label="Textarea with aria label"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                 ></textarea>
               </div>
 
@@ -121,16 +131,16 @@ export default function TestPage() {
               <div>
                 <input
                   type="text"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                   // Missing aria-label intentionally
                 />
 
-                <select className="px-4 py-2 border">
+                <select className="px-4 py-2 border good-focus">
                   <option>Option 1</option>
                   <option>Option 2</option>
                 </select>
 
-                <textarea className="px-4 py-2 border"></textarea>
+                <textarea className="px-4 py-2 border good-focus"></textarea>
               </div>
             </div>
           </section>
@@ -145,11 +155,14 @@ export default function TestPage() {
                 <input
                   id="properTextInput"
                   type="text"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                 />
 
                 <label htmlFor="properSelect">Select Menu</label>
-                <select id="properSelect" className="px-4 py-2 border">
+                <select
+                  id="properSelect"
+                  className="px-4 py-2 border good-focus"
+                >
                   <option>Option 1</option>
                   <option>Option 2</option>
                 </select>
@@ -158,23 +171,26 @@ export default function TestPage() {
                 <input
                   id="properCheckbox"
                   type="checkbox"
-                  className="px-4 py-2 border"
+                  className="px-4 py-2 border good-focus"
                 />
               </div>
 
               {/* Failing Examples (only htmlFor/id relationship fails) */}
               <div>
                 <label>Text Input Without For</label>
-                <input type="text" className="px-4 py-2 border" />
+                <input type="text" className="px-4 py-2 border good-focus" />
 
                 <label>Select Without For</label>
-                <select className="px-4 py-2 border">
+                <select className="px-4 py-2 border good-focus">
                   <option>Option 1</option>
                   <option>Option 2</option>
                 </select>
 
                 <label>Checkbox Without For</label>
-                <input type="checkbox" className="px-4 py-2 border" />
+                <input
+                  type="checkbox"
+                  className="px-4 py-2 border good-focus"
+                />
               </div>
             </div>
           </section>
@@ -191,7 +207,6 @@ export default function TestPage() {
                   type="text"
                   className="px-4 py-2 border good-focus"
                 />
-
                 <label htmlFor="goodFocusSelect">Select</label>
                 <select
                   id="goodFocusSelect"
