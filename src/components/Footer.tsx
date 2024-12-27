@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GitHubIcon } from "./GitHubIcon";
+import { A11yIcon } from "./A11yIcon";
 
 type NavigationItem = {
   name: string;
@@ -22,6 +23,11 @@ const navigation = {
       name: "GitHub",
       href: "https://github.com/dmostoller/form-accessibility-validator",
       icon: GitHubIcon,
+    },
+    {
+      name: "A11y Project",
+      href: "https://www.a11yproject.com/",
+      icon: A11yIcon,
     },
   ] as SocialItem[],
 };

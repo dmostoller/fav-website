@@ -14,8 +14,21 @@ export default function FAQ() {
                 </h3>
                 <p>
                   The extension uses static analysis and WCAG guidelines to
-                  evaluate form elements in real-time.
+                  evaluate form elements in real-time. Issues are highlighted as
+                  you browse with color-coded indicators.
                 </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  What are the main features?
+                </h3>
+                <ul className="list-disc pl-6 mb-4">
+                  <li>Real-time scanning of web forms</li>
+                  <li>Quick fixes with suggested improvements</li>
+                  <li>Comprehensive accessibility reports</li>
+                  <li>Customizable scanning rules</li>
+                </ul>
               </div>
 
               <div>
@@ -57,82 +70,45 @@ export default function FAQ() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Can I use this on Firefox?
+                  How do I configure the extension?
                 </h3>
-                <p>
-                  Currently, the extension is only available for Chromium-based
-                  browsers.
-                </p>
+                <ol className="list-decimal pl-6 space-y-2">
+                  <li>Right-click the extension icon</li>
+                  <li>Select &quot;Options&quot;</li>
+                  <li>Customize scanning rules and notification preferences</li>
+                </ol>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Do I need to configure anything after installation?
+                  What keyboard shortcuts are available?
                 </h3>
-                <p>
-                  The extension works out of the box, but you can customize
-                  settings through the options panel.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Features & Usage</h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4">
-                  Can I export accessibility reports?
-                </h3>
-                <p>
-                  Yes, you can export reports in PDF, JSON or Markdown formats
-                  for documentation and tracking.
-                </p>
+                <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded">
+                  <ul className="space-y-2">
+                    <li>
+                      <kbd>Alt</kbd> + <kbd>A</kbd> - Toggle extension
+                    </li>
+                    <li>
+                      <kbd>Alt</kbd> + <kbd>R</kbd> - Generate report
+                    </li>
+                    <li>
+                      <kbd>Alt</kbd> + <kbd>F</kbd> - Quick fix suggestions
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Does it work with password-protected pages?
+                  Any tips for getting started?
                 </h3>
-                <p>
-                  Yes, the extension works on any page you can access in your
-                  browser.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-4">
-                  Can I customize the scanning rules?
-                </h3>
-                <p>
-                  Yes, you can enable/disable specific rules and filter by
-                  severity levels.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Troubleshooting</h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4">
-                  The extension isn&apos;t detecting my forms
-                </h3>
-                <p>
-                  Try refreshing the page or checking if the form elements are
-                  properly rendered in the DOM.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-4">
-                  How do I report bugs?
-                </h3>
-                <p>
-                  You can report issues through our GitHub repository or support
-                  email.
-                </p>
+                <div className="bg-amber-100/30 dark:bg-amber-900/30 border border-amber-200/30 dark:border-amber-700/30 p-4 rounded">
+                  <ul className="space-y-2 text-amber-900 dark:text-amber-100">
+                    <li>Pin the extension for quick access</li>
+                    <li>Enable automatic scanning in the options</li>
+                    <li>Use keyboard shortcuts for faster workflow</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

@@ -16,6 +16,9 @@ export default function FeaturesGuide() {
         "Form Control Labels (WCAG 1.3.1 Level A)",
         "Color Contrast (WCAG 1.4.3 Level AA)",
         "Focus Indicators (WCAG 2.4.7 Level AA)",
+        "Form Field Groups (WCAG 1.3.1 Level A)",
+        "Autocomplete Attributes (WCAG 1.3.5 Level AA)",
+        "Error Handling (WCAG 3.3.1 Level A)",
         "Detailed violation reporting and guidance",
         "Note: Additional manual testing recommended for full compliance",
       ],
@@ -29,8 +32,21 @@ export default function FeaturesGuide() {
         "Best practice recommendations",
       ],
     },
+    {
+      title: "Comprehensive Validation Rules",
+      description: "Complete set of accessibility checks for form elements",
+      details: [
+        "Label presence and association",
+        "Color contrast ratios",
+        "Focus visibility checks",
+        "Fieldset and legend usage",
+        "Autocomplete attributes",
+        "Error message presentation",
+        "Error state associations",
+        "Severity-based prioritization",
+      ],
+    },
   ];
-
   return (
     <div className="max-w-3xl">
       <h1 className="text-3xl font-bold mb-8">Features</h1>
