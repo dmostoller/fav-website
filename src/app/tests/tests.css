@@ -1,90 +1,89 @@
 :root {
+  --background: #ffffff;
+  --text: #000000;
+  --border: #e5e7eb;
   --low-contrast: #999999;
-  --medium-contrast: #666666;
+  --primary: #2563eb;
+  --focus-ring: #2563eb;
+  --focus-ring-offset: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background: #1a1a1a;
+    --text: #ffffff;
+    --border: #333333;
     --low-contrast: #666666;
-    --medium-contrast: #999999;
+    --primary: #60a5fa;
+    --focus-ring: #60a5fa;
   }
 }
 
-.bad-button {
-  border: none;
+/* Base form element styles */
+input,
+select,
+textarea {
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* Remove default focus styles first */
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
 }
 
-.bad-button:focus {
+/* Focus styles */
+.good-focus:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+  border-color: var(--focus-ring);
+}
+
+.no-focus:focus-visible {
   outline: none;
+  border-color: var(--border);
 }
 
-.weak-focus:focus {
-  outline: 1px dotted var(--border);
+/* Color contrast classes */
+.text-normal {
+  color: var(--text);
 }
 
-.good-focus:focus {
-  outline: 3px solid var(--primary);
-  outline-offset: 2px;
+.text-low-contrast {
+  color: var(--low-contrast);
 }
 
-.custom-focus:focus {
-  outline: none;
-  box-shadow:
-    0 0 0 3px var(--success),
-    0 0 0 6px var(--background);
-}
-/* Color Contrast Styles */
-.low-contrast {
-  color: #999;
+/* Form element specific styles */
+fieldset {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-.medium-contrast {
-  color: #666;
+legend {
+  padding: 0 0.5rem;
 }
 
-.good-contrast {
-  color: #000;
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--primary);
 }
 
-.low-contrast-button {
-  color: #fff;
-  background-color: #e3e3e3;
+/* Label spacing */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-/* ARIA Styles */
-.custom-button {
-  padding: 0.5rem 1rem;
-  background: #f0f0f0;
-  cursor: pointer;
-}
-
-.custom-button:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
-}
-
-.alert {
-  border-radius: 4px;
-}
-
-.tab-list {
-  display: flex;
-  gap: 1rem;
-}
-
-.tab-list [role="tab"] {
-  padding: 0.5rem 1rem;
-  background: #f0f0f0;
-  cursor: pointer;
-}
-
-.tab-list [role="tab"]:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
-}
-
-.focusable-div:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+/* Input group spacing */
+input + label,
+select + label,
+textarea + label {
+  margin-top: 1rem;
 }
