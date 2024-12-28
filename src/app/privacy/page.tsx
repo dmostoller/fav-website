@@ -72,7 +72,7 @@ export default function Privacy() {
               GitHub repository
             </a>
           </li>
-          <li>Email us at privacy@formaccessibilityvalidator.com</li>
+          <li>Email us at formaccessibilityvalidator@gmail.com</li>
         </ul>
 
         <p className="text-sm mt-8">

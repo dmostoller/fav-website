@@ -81,7 +81,7 @@ export default function Terms() {
               GitHub repository
             </a>
           </li>
-          <li>Email us at legal@formaccessibilityvalidator.com</li>
+          <li>Email us at formaccessibilityvalidator@gmail.com</li>
         </ul>
 
         <p className="text-sm mt-8">

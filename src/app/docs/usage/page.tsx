@@ -86,7 +86,6 @@ export default function UsageGuide() {
           </h3>
           <ul className="mt-2 space-y-2 text-amber-900 dark:text-amber-100">
             <li>Pin the extension for quick access</li>
-            <li>Use keyboard shortcuts for faster workflow</li>
             <li>Enable automatic scanning in the options</li>
           </ul>
         </div>

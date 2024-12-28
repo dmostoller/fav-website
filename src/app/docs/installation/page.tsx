@@ -52,8 +52,7 @@ export default function InstallationGuide() {
           </li>
           <li>
             <p>
-              Right-click the extension icon and select &quot;Options&quot; to
-              customize settings
+              Click the settings icon and select options to customize settings
             </p>
           </li>
         </ol>

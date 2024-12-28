@@ -21,7 +21,7 @@ const navigation = {
   social: [
     {
       name: "GitHub",
-      href: "https://github.com/dmostoller/form-accessibility-validator",
+      href: "https://github.com/dmostoller/form-accessibility-validator-extension",
       icon: GitHubIcon,
     },
     {

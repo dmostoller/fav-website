@@ -104,7 +104,7 @@ export default function DocsLayout({
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com/dmostoller/form-accessibility-validator"
+                href="https://github.com/dmostoller/form-accessibility-validator-extension"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-[var(--primary)]"
